@@ -73,7 +73,7 @@ const markup = images
   .map(
     image =>
       `<li class="gallery-item">
-        <a class="gallery-link" href="${image.original}" title="${image.description}">
+        <a class="gallery-link" href="${image.original}">
           <img
             class="gallery-image"
             src="${image.preview}"
@@ -91,6 +91,8 @@ list.innerHTML = markup;
 const options = {
   captions: true,
   captionDelay: 250,
+  captionsData: 'alt',
+  captionPosition: 'bottom',
 };
 
 let gallery = new SimpleLightbox('.js-gallery a', options);

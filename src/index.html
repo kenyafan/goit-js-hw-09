@@ -9,9 +9,22 @@
 </head>
 
 <body>
-  <div id="galleryContainer"></div>
 
   <ul class="gallery js-gallery"></ul>
+
+
+  <form class="feedback-form" autocomplete="off">
+    <label>
+      Email
+      <input class="feedback-form-input" type="email" name="email" autofocus />
+    </label>
+    <label>
+      Message
+      <textarea class="feedback-form-textarea" name="message" rows="8"></textarea>
+    </label>
+    <button class="feedback-form-btn" type="submit">Submit</button>
+  </form>
+
 
   <script type="module" src="./js/1-gallery.js" defer></script>
   <script type="module" src="./js/2-form.js" defer></script>

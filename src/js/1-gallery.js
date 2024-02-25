@@ -1,3 +1,6 @@
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
+
 const images = [
   {
     preview:
@@ -90,6 +93,6 @@ const options = {
   captionDelay: 250,
 };
 
-let gallery = new SimpleLightbox('.gallery a', options);
+let gallery = new SimpleLightbox('.js-gallery a', options);
 
 gallery.on('show.simplelightbox', function () {});

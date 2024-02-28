@@ -6,6 +6,7 @@
   background: #fff;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 .feedback-form label {
   display: flex;

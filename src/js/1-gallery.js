@@ -89,10 +89,8 @@ const markup = images
 list.innerHTML = markup;
 
 const options = {
-  captions: true,
   captionDelay: 250,
   captionsData: 'alt',
-  captionPosition: 'bottom',
 };
 
 let gallery = new SimpleLightbox('.js-gallery a', options);

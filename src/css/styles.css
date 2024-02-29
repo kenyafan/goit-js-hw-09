@@ -74,6 +74,11 @@ img {
   scale: 1.05;
 }
 
+.gallery-image {
+  width: 360px;
+  height: 200px;
+}
+
 /* #endregion */
 
 /* #region Form */

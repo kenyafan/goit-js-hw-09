@@ -93,5 +93,3 @@ const options = {
 };
 
 let gallery = new SimpleLightbox('.js-gallery a', options);
-
-gallery.on('show.simplelightbox', function () {});

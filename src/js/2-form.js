@@ -1,18 +1,18 @@
 const form = document.querySelector('.feedback-form');
 
 const saveFormState = () => {
-  const formData = {
+  const formDataSave = {
     email: form.email.value.trim(),
     message: form.message.value.trim(),
   };
-  localStorage.setItem('feedback-form-state', JSON.stringify(formData));
+  localStorage.setItem('feedback-form-state', JSON.stringify(formDataSave));
 };
 
 const loadFromLS = () => {
-  const formData = JSON.parse(localStorage.getItem('feedback-form-state'));
-  if (formData) {
-    form.email.value = formData.email;
-    form.message.value = formData.message;
+  const formDataLoad = JSON.parse(localStorage.getItem('feedback-form-state'));
+  if (formDataLoad) {
+    form.email.value = formDataLoad.email;
+    form.message.value = formDataLoad.message;
   }
 };
 

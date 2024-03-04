@@ -67,7 +67,7 @@ const images = [
   },
 ];
 
-const list = document.querySelector('.js-gallery');
+const galleryElement = document.querySelector('.js-gallery');
 
 const markup = images
   .map(
@@ -85,7 +85,7 @@ const markup = images
   )
   .join('');
 
-list.innerHTML = markup;
+galleryElement.innerHTML = markup;
 
 const options = {
   captionDelay: 250,
